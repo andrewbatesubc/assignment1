@@ -244,7 +244,8 @@ private void addStock(final String symbol) {
 	stockService.addStock(symbol, new AsyncCallback<Void>() {
 	      public void onFailure(Throwable error) {
 	    	  handleError(error);
-	    	  System.out.println("Just between you and me, something smells!");
+	    	  //System.out.println("Just between you and me, something smells!");
+	    	  //No more punchline!! aahahhahah
 	      }
 	      public void onSuccess(Void ignore) {
 	        displayStock(symbol);
