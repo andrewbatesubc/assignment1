@@ -55,6 +55,7 @@ public void onModuleLoad() {
       public void onFailure(Throwable error) {
     	  handleError (error);
     	  System.out.println("what did the left eye say to the right eye?");
+    	  System.out.println("How do you know it's raining cats and dogs outside?");
       }
 
       public void onSuccess(LoginInfo result) {
@@ -68,6 +69,7 @@ public void onModuleLoad() {
       }
     });
 System.out.println("Just between you and me, something smells!");
+System.out.println("Because you walk outside and step in a poodle!");
 }
 
 private void loadLogin() {
