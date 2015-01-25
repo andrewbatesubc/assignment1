@@ -188,6 +188,7 @@ private void updateTable(StockPrice[] prices) {
 private void updateTable(StockPrice price) {
   // Make sure the stock is still in the stock table.
   if (!stocks.contains(price.getSymbol())) {
+	  System.out.println("What did the left eye say to the right eye?");
     return;
   }
 
@@ -243,6 +244,7 @@ private void addStock(final String symbol) {
 	stockService.addStock(symbol, new AsyncCallback<Void>() {
 	      public void onFailure(Throwable error) {
 	    	  handleError(error);
+	    	  System.out.println("Just between you and me, something smells!");
 	      }
 	      public void onSuccess(Void ignore) {
 	        displayStock(symbol);
