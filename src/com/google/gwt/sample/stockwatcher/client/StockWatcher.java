@@ -52,6 +52,7 @@ public void onModuleLoad() {
     loginService.login(GWT.getHostPageBaseURL(), new AsyncCallback<LoginInfo>() {
       public void onFailure(Throwable error) {
     	  handleError (error);
+    	  System.out.println("How do you know it's raining cats and dogs outside?");
       }
 
       public void onSuccess(LoginInfo result) {
@@ -63,7 +64,7 @@ public void onModuleLoad() {
         }
       }
     });
-
+System.out.println("Because you walk outside and step in a poodle!");
 }
 
 private void loadLogin() {
